@@ -28,7 +28,7 @@ function generateComputerChoice () {
     computerChoiceDisplay.innerHTML = computerChoice
 }
 
-/* result is determined */
+/* result is determined and displayed */
 function getResult() {
     if (computerChoice === userChoice) {
         result = 'Its a Draw!'
@@ -51,4 +51,5 @@ function getResult() {
     else if (computerChoice === 'scissors' && userChoice === 'rock') {
         result = 'You Win!'
     }
+    resultDisplay.innerHTML = result
 }
